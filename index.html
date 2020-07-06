@@ -14,10 +14,7 @@
     <link rel="stylesheet" href="style.css">
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 
 <body>
@@ -90,7 +87,34 @@
 
             <div class="container-fluid">
                 <div class="row">
-                    
+                        <div class="col-md-3 col-6 p-2 text-center" >
+                            <div class="card card-body" style="min-height: 200px;background: rgba(245, 245, 245, 0.2);color: #fff;">
+                                <p><i class="fas fa-thermometer-quarter" style="font-size: 40px;"></i></p>
+                                <p>Tempereture</p>
+                                
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 p-2 text-center" >
+                            <div class="card card-body" style="min-height: 200px;background: rgba(245, 245, 245, 0.2);color: #fff">
+                                <p><i class="fas fa-tachometer-alt" style="font-size: 40px;"></i></p>
+                                <p>Pressure</p>
+                                <div id="weather-pressure"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 p-2 text-center" >
+                            <div class="card card-body" style="min-height: 200px;background: rgba(245, 245, 245, 0.2);color: #fff">
+                                <p><i class="fas fa-tint-slash" style="font-size: 40px;"></i></p>
+                                <p>Humidity</p>
+                                
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 p-2 text-center" >
+                            <div class="card card-body" style="min-height: 200px;background: rgba(245, 245, 245, 0.2);color: #fff">
+                                <p><i class="fas fa-wind" style="font-size: 40px;"></i></p>
+                                <p>wind speed</p>
+                                
+                            </div>
+                        </div> 
                 </div>
             </div>
         </div>
