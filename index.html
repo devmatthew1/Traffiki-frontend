@@ -87,30 +87,30 @@
 
             <div class="container-fluid">
                 <div class="row">
-                        <div class="col-md-3 col-6 p-2 text-center" >
+                        <div class="col-md-3 col-6 p-2 text-center" style="min-width: 115px;" >
                             <div class="card card-body" style="min-height: 200px;background: rgba(245, 245, 245, 0.2);color: #fff;">
-                                <p><i class="fas fa-thermometer-quarter" style="font-size: 40px;"></i></p>
+                                <p><i class="fas fa-thermometer-quarter Tfont" style="font-size: 40px;"></i></p>
                                 <p>Tempereture</p>
                                 
                             </div>
                         </div>
-                        <div class="col-md-3 col-6 p-2 text-center" >
+                        <div class="col-md-3 col-6 p-2 text-center" style="min-width: 115px;">
                             <div class="card card-body" style="min-height: 200px;background: rgba(245, 245, 245, 0.2);color: #fff">
-                                <p><i class="fas fa-tachometer-alt" style="font-size: 40px;"></i></p>
+                                <p><i class="fas fa-tachometer-alt Tfont" style="font-size: 40px;"></i></p>
                                 <p>Pressure</p>
                                 <div id="weather-pressure"></div>
                             </div>
                         </div>
-                        <div class="col-md-3 col-6 p-2 text-center" >
+                        <div class="col-md-3 col-6 p-2 text-center" style="min-width: 115px;">
                             <div class="card card-body" style="min-height: 200px;background: rgba(245, 245, 245, 0.2);color: #fff">
-                                <p><i class="fas fa-tint-slash" style="font-size: 40px;"></i></p>
+                                <p><i class="fas fa-tint-slash Tfont" style="font-size: 40px;"></i></p>
                                 <p>Humidity</p>
                                 
                             </div>
                         </div>
-                        <div class="col-md-3 col-6 p-2 text-center" >
+                        <div class="col-md-3 col-6 p-2 text-center" style="min-width: 115px;">
                             <div class="card card-body" style="min-height: 200px;background: rgba(245, 245, 245, 0.2);color: #fff">
-                                <p><i class="fas fa-wind" style="font-size: 40px;"></i></p>
+                                <p><i class="fas fa-wind Tfont" style="font-size: 40px;"></i></p>
                                 <p>wind speed</p>
                                 
                             </div>
@@ -130,6 +130,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
     <script type="text/javascript">
+        
         $(document).ready(function () {
             $("#sidebar").mCustomScrollbar({
                 theme: "minimal"
@@ -141,6 +142,7 @@
                 $('a[aria-expanded=true]').attr('aria-expanded', 'false');
             });
         });
+
     </script>
 </body>
 

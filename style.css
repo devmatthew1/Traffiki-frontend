@@ -147,7 +147,7 @@ a.setting:hover {
 
 #main-container {
     width: calc(100% - 250px);
-    
+    overflow-x: scroll;
     min-height: 100vh;
     transition: all 0.3s;
     position: absolute;
@@ -164,6 +164,19 @@ a.setting:hover {
 ----------------------------------------------------- */
 
 @media (max-width: 768px) {
+
+    #sidebar {
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: #7386D5;
+    color: #fff;
+    transition: all 0.3s;
+}
+
     #sidebar {
         margin-left: -250px;
     }
@@ -174,7 +187,7 @@ a.setting:hover {
         width: 100%;
     }
     #main-container.active {
-        width: calc(100% - 250px);
+        width: calc(100% - 200px);
     }
     #sidebarCollapse span {
         display: none;
