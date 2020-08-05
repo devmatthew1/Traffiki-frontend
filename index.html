@@ -35,7 +35,7 @@
                     <a href="#">About</a>
                 </li>
                 <li>
-                    <a href="#pageSubmenu">Pages</a>
+                    <a href="#pageSubmenu" data-toggle="modal" data-target="#reservation">Pages</a>
                 </li>
                 <li>
                     <a href="#">Contact</a>
@@ -118,8 +118,69 @@
                         </div> 
                 </div>
             </div>
+
+
+
             
-             <!-- this is meant to be a modal starts-->
+             <!-- reservation modal starts-->
+             <div class="modal fade right" id="reservation" tabindex="-1" role="dialog" 
+                  aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="false" style="top: 10%;">
+                    <div class="modal-dialog modal-full-height modal-right modal-notify modal-info" role="document">
+                      <div class="modal-content">
+                       
+                        <!--Body-->
+                        <div class="modal-body">
+                
+                          <form>
+                              <div class="container">
+                                <h3>Select payment method</h3>
+                                <div class="row" id="select-payment-platform">
+                                    <div class="col-md-6">
+                                        <div class="card paystack">
+                                            <div class="card-body">
+                                                <input type="radio" name="select-payment-platform" id="paystack" value="paystack" checked="checked" />
+                                                <h5>Debit card</h5>
+                                                <label for="paystack"><img src="images/paystack.png" alt="" class="img-fluid" /></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card rave">
+                                            <div class="card-body">
+                                                <input type="radio" name="select-payment-platform" id="Traffiken" value="Traffiken" />
+                                                <h5>Traffiken wallet</h5>
+                                                <label for="Traffiken"><img src="images/Traffiken.png" alt="" class="img-fluid" /></label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                
+                                  <div class="form-group pt-2">
+                                        <label for="exampleInputEmail1">select duration/price*</label>
+                                          <select class="form-control shadow-none" style="overflow: scroll;">
+                                                <option value="" selected>duration/price</option> 
+                                                <option value="">30min - #500</option> 
+                                                <option value="">1hr - #1000</option>
+                                          </select> 
+                                  </div>
+                                  <button type="submit" class="btn" style="background-color: #2f4f4f;color: #fff;">Submit</button>
+                            </div>
+                          </form>
+
+                      </div>
+                    
+                    </div>
+
+                </div>
+
+              </div>
+              <!--reservation modal end-->
+
+
+
+
+
             <div class="container">
                 <h3>Select a payment platform</h3>
                 <div class="row" id="select-payment-platform">
